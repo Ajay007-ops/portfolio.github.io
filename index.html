@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your webpage">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Your Name">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ed18cf210.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Ajay</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/usernew1.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Enthusiastic Frontend Developer with 2+ years of IT experience specializing in developing
+                    scalable and high-performance web applications. Proficient in React JS, with a strong
+                    background in Azure Site Reliability Engineering (SRE) and Javascript development. Adept
+                    at defining front-end architectures, implementing components, and enhancing user
+                    experiences. Known for collaborative work ethic, technical problem-solving, and a proactive
+                    approach to continuous learning and best practices. Familiar with frontend testing
+                    frameworks and eager to contribute to innovative technology solutions.</p>                   
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS web apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2024-Current</span><br>Full time Software Engineer at Wipro Ltd.</li>
+                            <li><span>2022-</span><br>Internship at Wipro Ltd.</li>
+                            <li><span>2021-2022</span><br>Internship at Grow More Pvt Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>12th Science</li>
+                            <li><span>2018-2022</span><br>BE in Computer Science.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a passionate web designer, I specialize in crafting visually captivating and highly functional websites that transform user experiences into memorable journeys. My approach blends creative vision with cutting-edge technology to bring your ideas to life, ensuring every project reflects both beauty and functionality. Dedicated to designing user-centric interfaces, I focus on creating responsive, mobile-friendly designs that look great on any device. With a keen eye for detail and a love for design, I deliver dynamic web solutions that not only engage users but also drive results and elevate your brand. My goal is to transform complex concepts into elegant designs that resonate with users and achieve your business objectives.</p>                   
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>As a dedicated UI/UX designer, I specialize in creating intuitive and visually stunning digital experiences that captivate and engage users. My approach involves blending user-centric design principles with innovative solutions to craft interfaces that are not only aesthetically pleasing but also highly functional. By focusing on seamless interactions and responsive design, I ensure that every project delivers an exceptional user experience across all devices. With a strong emphasis on research and empathy, I translate complex ideas into elegant, user-friendly designs that drive engagement and meet business goals. My passion lies in designing interfaces that not only look great but also enhance usability and satisfaction.</p>                  
+                      <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                   <p> As a skilled app designer, I specialize in creating sleek, user-friendly mobile applications that deliver exceptional experiences and drive user engagement. My approach combines innovative design with a deep understanding of user behavior to craft intuitive interfaces that are both visually appealing and functionally robust. I focus on designing seamless interactions and ensuring responsiveness across various devices and platforms. By prioritizing user needs and leveraging the latest design trends, I transform complex ideas into streamlined, engaging app experiences that captivate users and achieve your business objectives. My passion lies in building apps that not only look great but also provide a smooth, efficient, and enjoyable user journey.</p>
+
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Music App">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- --------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ajayawchar007@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9172890132</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Aj. Made with <i class="fa-solid fa-heart"></i> by Ajay</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function opentab(tabname, event) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            // Remove active class from all tab links and contents
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active class to the clicked tab link and corresponding content
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzE2kh-dUpSIOwHy0d-dNQVO1etHjQTFPDpO5P-a7NEPd4I7X3u33-UjFsmlgmsG4wA-w/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
